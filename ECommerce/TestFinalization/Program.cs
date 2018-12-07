@@ -25,6 +25,7 @@ namespace TestFinalization
             //return regult set
             //close connection
             //read from file 
+            //display
         }
 
         void IDisposable.Dispose()
