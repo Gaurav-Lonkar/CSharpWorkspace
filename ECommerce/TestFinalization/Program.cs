@@ -34,6 +34,7 @@ namespace TestFinalization
             {
                 fs.Close();
             }
+            GC.SuppressFinalize(this);
         }
 
         ~DatabaseManager()
@@ -56,6 +57,8 @@ namespace TestFinalization
             }
               IDisposable dsp = dm;
              dsp.Dispose();
+            Console.WriteLine("Waiting.................");
+            GC.WaitForPendingFinalizers();
             Console.ReadLine();
         }
     }
