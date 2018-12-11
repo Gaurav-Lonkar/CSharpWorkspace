@@ -20,13 +20,19 @@
             top: 2px;
         }
         .auto-style4 {
-            width: 97px;
+            width: 88px;
         }
         .auto-style5 {
             width: 309px;
         }
         .auto-style6 {
             width: 81%;
+        }
+        .auto-style7 {
+            width: 112%;
+        }
+        .auto-style8 {
+            width: 152px;
         }
     </style>
 </head>
@@ -65,8 +71,42 @@
             <tr>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5" id="forgot" aria-hidden="True">
-                    <asp:LinkButton ID="forgot" runat="server" OnClick="forgot_Click">Forgot password?</asp:LinkButton>
+                    <table class="auto-style7">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="auto-style8">
+                    <asp:LinkButton ID="forgot"
+                                    runat="server" 
+                                    OnClick="forgot_Click">
+                                    Forgot password?
+
+                    </asp:LinkButton>
+                            </td>
+                            <td>
                     <asp:LinkButton ID="sign" runat="server" OnClick="On_signup">SignUp</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style5" id="forgot" aria-hidden="True">
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1">
+                        <ItemTemplate>
+                            Id:
+                            <asp:Label ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
+                            <br />
+                            uname:
+                            <asp:Label ID="unameLabel" runat="server" Text='<%# Eval("uname") %>' />
+                            <br />
+                            pass:
+                            <asp:Label ID="passLabel" runat="server" Text='<%# Eval("pass") %>' />
+                            <br />
+<br />
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>

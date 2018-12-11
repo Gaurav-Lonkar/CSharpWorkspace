@@ -19,7 +19,7 @@ namespace WebApplication
         {
             if(IsPostBack==false)
             {
-                Response.Write("in get");
+               // Response.Write("in get");
             }
         }
 
@@ -38,7 +38,7 @@ namespace WebApplication
              String username = this.uname.Text;
             String password = this.pass.Text;
 
-            if (username == "abc" && password == "123")
+            if (username =="abc" && password == "123")
             {
                 Response.Redirect("welcome.aspx");
             }
@@ -57,6 +57,10 @@ namespace WebApplication
         protected void On_signup(object sender, EventArgs e)
         {
             Response.Redirect("signup.aspx");
+        }
+        protected void on_register(object sender, EventArgs e)
+        {
+            Response.Redirect("register.aspx");
         }
     }
 }
