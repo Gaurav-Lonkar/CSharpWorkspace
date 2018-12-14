@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration; 
-    using BOL;
+using BOL;
 namespace DAL
 {
     public class customerDAL
@@ -33,8 +33,6 @@ namespace DAL
                     String phone = (reader["phone"].ToString());
                     custlist.Add(new customer(id,fname,lname,phone,email,password));
                 }
-
-
             }
             catch (Exception e)
             {
