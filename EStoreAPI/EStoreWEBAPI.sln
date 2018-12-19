@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreRESTAPI", "EStoreREST
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreWebMVC", "EStoreWebMVC\EStoreWebMVC.csproj", "{65B8252C-3287-4E4F-8F29-2345D827476E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreRESTClientConsole", "EStoreRESTClientConsole\EStoreRESTClientConsole.csproj", "{F233EA17-0231-4C71-BBE2-07DEC8B4F109}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{65B8252C-3287-4E4F-8F29-2345D827476E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B8252C-3287-4E4F-8F29-2345D827476E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B8252C-3287-4E4F-8F29-2345D827476E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F233EA17-0231-4C71-BBE2-07DEC8B4F109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F233EA17-0231-4C71-BBE2-07DEC8B4F109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F233EA17-0231-4C71-BBE2-07DEC8B4F109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F233EA17-0231-4C71-BBE2-07DEC8B4F109}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

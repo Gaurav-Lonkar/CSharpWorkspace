@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<EStoreWebMVC.Models.Customer>
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<ol>
+    @foreach (EStoreWebMVC.Models.Customer cust in @Model)
+    {
+        <li>
+            @Html.ActionLink(cust.fname + " " + cust.lname, "CDetails")
+        </li>
+    }
+</ol>
+
