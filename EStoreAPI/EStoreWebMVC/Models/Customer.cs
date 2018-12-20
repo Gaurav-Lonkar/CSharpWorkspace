@@ -12,19 +12,21 @@ namespace EStoreWebMVC.Models
         public String lname { get; set; }
         public String phone { get; set; }
         public String email { get; set; }
+        public String city { get; set; }
         public String password { get; set; }
 
         public Customer()
         {
 
         }
-        public Customer(int id, string fname, string lname, string phone, string email, string password)
+        public Customer(int id, string fname, string lname, string phone,String city, string email, string password)
         {
             this.id = id;
             this.fname = fname;
             this.lname = lname;
             this.phone = phone;
             this.email = email;
+            this.city = city;
             this.password = password;
         }
 
@@ -32,7 +34,7 @@ namespace EStoreWebMVC.Models
         {
             return "Id:" + this.id + " " + "Fname:" + this.fname +
                 "Lname:" + this.lname + " " + "Phone:" + this.phone +
-                "Email:" + this.email + " " + "Password:" + this.password;
+                "Email:" + this.email + " " + "Password:" + this.password+ " "+ "City:" +this.city;
         }
     }
 }
